@@ -1,4 +1,3 @@
-
 # This file was generated automatically from conda-smithy. To update this configuration,
 # update the conda-forge.yaml and/or the recipe/meta.yaml.
 
@@ -7,27 +6,28 @@ language: objective-c
 env:
   matrix:
     
-    - CONDA_PY=27  
-    - CONDA_PY=34  
-    - CONDA_PY=35  
+    - CONDA_PY=27
+    - CONDA_PY=34
+    - CONDA_PY=35
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
-    - secure: "HDVuLBsmusgcUdUh5vpUYARu4XtQk2KkwZKf/Ejw/w65mAqcgyDJYXyt7CrZdh5zG0tX2f6ZSSW1XOVy+NXA6Mhwr5Giew1zRr6BBBHxmYj4ZmMnrsPuM1y0KiaoBAXYt9UHwcgN1XY55P131Ehlyu/cfyGiBZdV4nDqv+zTkf/7MssalThUHP4DO9Y1RWDTLwZ5DhFpyYmfDrUgDGSBRFUlCj6GZsSe0DdNxyBN4eGqxw6FQsb+VUvWGKoUm6IRCF/Y5c6+oJC9CEvUFoR3M9vuk8U3DgCSXnm1j687xrKZvJyUhhYqtAOU07O7/NQvrgEPKMIwDBsu7hdSG9RGRfz9ci80Z2n+UOyoab8w3E5izSyxUZE/phVvLaYtT3JSm+2TFMGjesBwlOoBfVKkCg+G8VK1Ir8tQtuvq/HPMsKI5GiGpelaYW9IzSuGhrKsTwVaJ1CmCgicCVPVOuvPJGvuDub2dnNRbBI0AcI0Py1zYp/Z/yNvSJ/N53jbKO+V7b5kDwGrxNqdH2iABpyCe5rq2FG7X7fBphSWa5oEMGyOVfq5P9F8SphLV41Z7K+IPqyJLJYMpSoOTGMhIAgta/0eoz2xDZvLtYtAVYYSqJQiZ5LXjt9LS8Rmfy2P6Z/I9dPHvd90pZdeTQwjc858jRjC2gLiu+0ow3EtEnF/+LM="
+    - secure: "xWFXwwZmP+ew3mZMrwWkFkJKJ9VBpT54C+AyuWWktwVmL/StA30Xzu2vccNra4ydZ8D05Kyhnq19J0oxjqXs6zPJ4CzPTGFJrRwbTqCOyNoLab11M2mIUDvi+WLI6iZdt0HpJQFQyTccRuwoCq8yvFChaZK0//kORlmUSCtAcqRS4bP/aeDNVbF0eRqDfYdeAS7Ie2YzcOdQyvjj5/kVTxpkjHj7phf1cF9zzdc0jKdMu6wWx7nLQUAraZYz56Uv6mrIfzfdYoD3FhOmFN9TygG+Lc+4exfVrUyXXwTQ74A5NuMV0p8Npr3NF+v0+fENvY3GTEhWzY6HgL0TDvrLni5ujeQ/KfkkI5sgWK9FPj8CMCtW3kMpym90kOwvjcR/95O+z6jBZ3YKj0mKdHTC1Q06bq1w8kz0uYrUA3sLx0oj9UGjNCo+EWLENaDiDIk6J1E7r1wPR9opC7HoAWq7gajh44xQsg9hC/MgwMFJroWmScugnsw23tUoIh44OFc0glxf7CsgBuOAMZ6a/j7HPEdDW0ANE/RGsmw4QZilTvnPBOPf/e/Mlu9i3qO3P8HAsTHMeeckHIcdJsx1QLku27Yh0HoGnML15A+HVVR9IDCZ8DkSx7ngOu7vt7xGkxvD81dOFd66wREhliFHRUJkDINSEVkpVnz4ePKC4xI/aGQ="
 
+
+before_install:
+    - brew remove --force $(brew list)
 
 install:
     - |
       MINICONDA_URL="http://repo.continuum.io/miniconda"
-      MINICONDA_FILE="Miniconda3-3.7.3-MacOSX-x86_64.sh"
-      wget "${MINICONDA_URL}/${MINICONDA_FILE}"
+      MINICONDA_FILE="Miniconda3-latest-MacOSX-x86_64.sh"
+      curl -O "${MINICONDA_URL}/${MINICONDA_FILE}"
       bash $MINICONDA_FILE -b
 
       export PATH=/Users/travis/miniconda3/bin:$PATH
 
       conda update --yes conda
       conda install --yes conda-build jinja2 anaconda-client
-
-      
       conda config --add channels conda-forge
       
 

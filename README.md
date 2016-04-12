@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/webcolors-feedstock.svg
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/webcolors-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/webcolors-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/webcolors-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/webcolors-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/webcolors/badges/version.svg)](https://anaconda.org/conda-forge/webcolors)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/webcolors/badges/downloads.svg)](https://anaconda.org/conda-forge/webcolors)
+
 
 Updating webcolors-feedstock
 ============================
