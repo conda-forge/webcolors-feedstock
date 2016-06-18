@@ -26,8 +26,8 @@ test:
 
 about:
   home: https://github.com/ubernostrum/webcolors
-  license: BSD License
-  summary: 'A library for working with color names and color value formats defined by the HTML and CSS specifications for use in documents on the Web.'
+  license: BSD 3-Clause
+  summary: Library for working with HTML/CSS color formats in Python.
 
 extra:
   recipe-maintainers:
