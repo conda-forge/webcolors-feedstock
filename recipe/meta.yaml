@@ -10,7 +10,7 @@ source:
   md5: 2e9da1bbb7a087c6108e05be64640afb
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install
 
 requirements:
