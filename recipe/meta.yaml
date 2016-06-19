@@ -6,11 +6,12 @@ package:
 
 source:
   fn: webcolors-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/w/webcolors/webcolors-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/w/webcolors/webcolors-{{ version }}.tar.gz
   md5: 2e9da1bbb7a087c6108e05be64640afb
 
 build:
-  number: 0
+  number: 1
+  script: python setup.py install
 
 requirements:
   build:
@@ -25,8 +26,8 @@ test:
 
 about:
   home: https://github.com/ubernostrum/webcolors
-  license: BSD License
-  summary: 'A library for working with color names and color value formats defined by the HTML and CSS specifications for use in documents on the Web.'
+  license: BSD 3-Clause
+  summary: Library for working with HTML/CSS color formats in Python.
 
 extra:
   recipe-maintainers:

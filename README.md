@@ -3,11 +3,11 @@ About webcolors
 
 Home: https://github.com/ubernostrum/webcolors
 
-Package license: BSD License
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: A library for working with color names and color value formats defined by the HTML and CSS specifications for use in documents on the Web.
+Summary: Library for working with HTML/CSS color formats in Python.
 
 
 
