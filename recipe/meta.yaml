@@ -10,7 +10,7 @@ source:
   md5: 2e9da1bbb7a087c6108e05be64640afb
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install
 
 requirements:
@@ -27,6 +27,7 @@ test:
 about:
   home: https://github.com/ubernostrum/webcolors
   license: BSD 3-Clause
+  license_file: LICENSE
   summary: Library for working with HTML/CSS color formats in Python.
 
 extra:
