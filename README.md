@@ -11,6 +11,18 @@ Summary: Library for working with HTML/CSS color formats in Python.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/webcolors-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/webcolors-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/webcolors-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/webcolors-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/webcolors-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/webcolors-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/webcolors/badges/version.svg)](https://anaconda.org/conda-forge/webcolors)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/webcolors/badges/downloads.svg)](https://anaconda.org/conda-forge/webcolors)
+
 Installing webcolors
 ====================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `webcolors` available on your plat
 ```
 conda search webcolors --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/webcolors-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/webcolors-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/webcolors-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/webcolors-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/webcolors-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/webcolors-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/webcolors/badges/version.svg)](https://anaconda.org/conda-forge/webcolors)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/webcolors/badges/downloads.svg)](https://anaconda.org/conda-forge/webcolors)
 
 
 Updating webcolors-feedstock
