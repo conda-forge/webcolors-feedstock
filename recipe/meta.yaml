@@ -7,7 +7,7 @@ package:
 source:
   fn: webcolors-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/w/webcolors/webcolors-{{ version }}.tar.gz
-  md5: 2e9da1bbb7a087c6108e05be64640afb
+  sha256: b3b1c3a41e9c69d1982b76b6531239115519f91cc034a24e975749832dc51b8e
 
 build:
   number: 2
