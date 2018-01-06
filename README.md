@@ -14,9 +14,7 @@ Summary: Library for working with HTML/CSS color formats in Python.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/webcolors-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/webcolors-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/webcolors-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/webcolors-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/webcolors-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/webcolors-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/webcolors-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/webcolors-feedstock)
 
 Current release info
 ====================
