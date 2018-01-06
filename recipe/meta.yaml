@@ -10,7 +10,8 @@ source:
   sha256: e47e68644d41c0b1f1e4d939cfe4039bdf1ab31234df63c7a4f59d4766487206
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   script: python setup.py install
 
 requirements:
