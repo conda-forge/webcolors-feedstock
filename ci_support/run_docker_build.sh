@@ -17,7 +17,7 @@ channels:
  - defaults
 
 conda-build:
- root-dir: /feedstock_root/build_artefacts
+ root-dir: /home/conda/feedstock_root/build_artefacts
 
 show_channel_urls: true
 
@@ -37,8 +37,8 @@ fi
 rm -f "$FEEDSTOCK_ROOT/build_artefacts/conda-forge-build-done"
 
 cat << EOF | docker run -i \
-                        -v "${RECIPE_ROOT}":/recipe_root \
-                        -v "${FEEDSTOCK_ROOT}":/feedstock_root \
+                        -v "${RECIPE_ROOT}":/home/conda/recipe_root \
+                        -v "${FEEDSTOCK_ROOT}":/home/conda/feedstock_root \
                         -e HOST_USER_ID="${HOST_USER_ID}" \
                         -a stdin -a stdout -a stderr \
                         condaforge/linux-anvil \
@@ -57,10 +57,10 @@ conda clean --lock
 conda install --yes --quiet conda-forge-build-setup
 source run_conda_forge_build_setup
 
-conda build /recipe_root --quiet || exit 1
-upload_or_check_non_existence /recipe_root conda-forge --channel=main || exit 1
+conda build /home/conda/recipe_root --quiet || exit 1
+upload_or_check_non_existence /home/conda/recipe_root conda-forge --channel=main || exit 1
 
-touch /feedstock_root/build_artefacts/conda-forge-build-done
+touch /home/conda/feedstock_root/build_artefacts/conda-forge-build-done
 EOF
 
 # double-check that the build got to the end
