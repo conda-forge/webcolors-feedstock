@@ -1,4 +1,4 @@
-{% set version = "1.9.1" %}
+{% set version = "1.11.1" %}
 
 package:
   name: webcolors
@@ -7,12 +7,12 @@ package:
 source:
   fn: webcolors-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/w/webcolors/webcolors-{{ version }}.tar.gz
-  sha256: 18c091bd4bd75efd1e9f84f5eca4a54f6e6485eaa3967d2a55700835a1b1c418
+  sha256: 76f360636957d1c976db7466bc71dcb713bb95ac8911944dffc55c01cb516de6
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
