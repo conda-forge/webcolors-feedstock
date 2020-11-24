@@ -3,7 +3,7 @@ About webcolors
 
 Home: https://github.com/ubernostrum/webcolors
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/webcolors-feedstock/blob/master/LICENSE.txt)
 
