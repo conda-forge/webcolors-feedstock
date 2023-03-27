@@ -1,11 +1,11 @@
-About webcolors
-===============
+About webcolors-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/webcolors-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ubernostrum/webcolors
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/webcolors-feedstock/blob/main/LICENSE.txt)
 
 Summary: Library for working with HTML/CSS color formats in Python.
 
